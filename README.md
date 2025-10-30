@@ -6,6 +6,28 @@ Complete personal financial management application with artificial intelligence,
 
 **AI Money App** is a modern financial management platform that combines data analysis, smart budgets, and an AI assistant to provide a complete personal finance management experience. The application allows users to track transactions, set financial goals, create budgets, and gain valuable insights into their spending habits.
 
+## 📸 Screenshots
+
+### Dashboard Home
+
+![Dashboard Home](./screenshots/dashboard-home.png)
+_Main dashboard showing total balance, income, expenses, and budget comparison_
+
+### Transactions
+
+![Transactions](./screenshots/dashboard-transactions.png)
+_Transaction management interface with filters and search capabilities_
+
+### Analytics
+
+![Analytics](./screenshots/dashboard-analytics.png)
+_Detailed financial analytics with income vs expenses charts and savings trends_
+
+### Goals
+
+![Goals](./screenshots/dashboard-goals.png)
+_Financial goals tracking and progress monitoring_
+
 ## ✨ Key Features
 
 ### 💳 Financial Management
