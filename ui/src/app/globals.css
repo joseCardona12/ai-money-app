@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --background: #f6f6f6;
+  --foreground: #171717;
+  --color-blue: #1a48bc;
+  --color-blue-light: #e8edf7;
+  --color-blue-light-2: #cedbf6;
+  --color-blue-light-3: #5f90fa;
+  --color-blue-hover: #1a4dcf;
+  --color-gray: #fbfcfd;
+  --color-black: #0a0b0f;
+  --color-gray-border: rgb(237, 237, 237);
+  --color-text-gray: rgb(104, 104, 104);
+  --color-text-black: #0a0b0f;
+  --color-gray-hover: rgb(244, 244, 244);
+  --color-red: rgb(249, 113, 113);
+  --color-red-light: #fef2f2;
+  --color-green: #10b981;
+  --color-green-light: #f0fdf4;
+  --color-orange: #f59e0b;
+  --color-orange-light: #fffbeb;
+  --color-purple: #8b5cf6;
+  --color-purple-light: #faf5ff;
+  --color-white: #ffffff;
+  --color-gray-2: #f0f2f5;
+  --color-gray-3: #e2e5ea;
+  --font-family: var(--font-inter), sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Dark mode variables - class-based */
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --color-blue: #3b82f6;
+  --color-blue-light: #1e293b;
+  --color-blue-light-2: #334155;
+  --color-blue-light-3: #64748b;
+  --color-blue-hover: #2563eb;
+  --color-gray: #1d1d1d;
+  --color-black: #898989;
+  --color-gray-border: #2d2d2d;
+  --color-text-gray: #898989;
+  --color-text-black: #ffffff;
+  --color-gray-hover: #374151;
+  --color-red: #ef4444;
+  --color-red-light: #1f2937;
+  --color-green: #10b981;
+  --color-green-light: #1f2937;
+  --color-orange: #f59e0b;
+  --color-orange-light: #1f2937;
+  --color-purple: #8b5cf6;
+  --color-purple-light: #1f2937;
+  --color-white: #222222;
+  --color-gray-2: #292929;
+  --color-gray-3: #333333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  font-weight: 600;
+}
+p {
+  font-family: var(--font-inter);
+  color: var(--color-text-gray);
+  margin-bottom: 0;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-border);
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-gray);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-border) transparent;
+}
+
+/* Custom scrollbar for specific components */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 4px 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.6);
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.3) transparent;
+}
+
+/* Dark mode specific styles */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: var(--color-black);
+}
+
+.dark p {
+  color: var(--color-text-gray);
+}
+
+/* Dark mode scrollbar styles */
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--color-gray-border);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-gray);
+}
+
+.dark * {
+  scrollbar-color: var(--color-gray-border) transparent;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(75, 85, 99, 0.5);
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(75, 85, 99, 0.8);
+}
+
+.dark .custom-scrollbar {
+  scrollbar-color: rgba(75, 85, 99, 0.5) transparent;
+}

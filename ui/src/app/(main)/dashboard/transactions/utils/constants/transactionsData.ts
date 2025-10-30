@@ -1,0 +1,206 @@
+import { IconPlus, IconDownload } from "@tabler/icons-react";
+import { SelectOption } from "@/interfaces/selectOption";
+
+export const TRANSACTIONS_STATS = [
+  {
+    title: "Total Transactions",
+    value: "1,234",
+    change: "+9.2%",
+    changeText: "from last month",
+    positive: true,
+  },
+  {
+    title: "Total Income",
+    value: "$45,231.89",
+    change: "+10.1%",
+    changeText: "from last month",
+    positive: true,
+  },
+  {
+    title: "Total Expenses",
+    value: "$28,731.89",
+    change: "+8.9%",
+    changeText: "from last month",
+    positive: false,
+  },
+];
+
+export const TRANSACTION_CATEGORIES: SelectOption[] = [
+  { value: "all", label: "All Categories" },
+  { value: "income", label: "Income" },
+  { value: "food", label: "Food & Dining" },
+  { value: "transportation", label: "Transportation" },
+  { value: "entertainment", label: "Entertainment" },
+  { value: "health", label: "Health" },
+  { value: "bills", label: "Bills & Utilities" },
+  { value: "shopping", label: "Shopping" },
+];
+
+export const TRANSACTION_TYPES: SelectOption[] = [
+  { value: "all", label: "All Types" },
+  { value: "income", label: "Income" },
+  { value: "expense", label: "Expense" },
+];
+
+export const TIME_PERIODS: SelectOption[] = [
+  { value: "30days", label: "Last 30 days" },
+  { value: "7days", label: "Last 7 days" },
+  { value: "3months", label: "Last 3 months" },
+  { value: "6months", label: "Last 6 months" },
+  { value: "year", label: "This year" },
+];
+
+export const TRANSACTIONS_LIST = [
+  {
+    id: 1,
+    name: "Salary Deposit",
+    description: "Monthly salary payment",
+    category: "Income",
+    date: "2024-01-15",
+    time: "09:30 AM",
+    amount: 5000.0,
+    type: "income" as const,
+    status: "completed" as const,
+    icon: "💰",
+    color: "var(--color-green)",
+  },
+  {
+    id: 2,
+    name: "Grocery Shopping",
+    description: "Whole Foods Market",
+    category: "Food & Dining",
+    date: "2024-01-14",
+    time: "06:35 PM",
+    amount: 156.32,
+    type: "expense" as const,
+    status: "completed" as const,
+    icon: "🛒",
+    color: "var(--color-blue)",
+  },
+  {
+    id: 3,
+    name: "Uber Ride",
+    description: "Trip to downtown",
+    category: "Transportation",
+    date: "2024-01-14",
+    time: "03:15 PM",
+    amount: 24.5,
+    type: "expense" as const,
+    status: "completed" as const,
+    icon: "🚗",
+    color: "var(--color-purple)",
+  },
+  {
+    id: 4,
+    name: "Netflix Subscription",
+    description: "Monthly subscription",
+    category: "Entertainment",
+    date: "2024-01-13",
+    time: "12:00 PM",
+    amount: 15.99,
+    type: "expense" as const,
+    status: "completed" as const,
+    icon: "📺",
+    color: "var(--color-red)",
+  },
+  {
+    id: 5,
+    name: "Gym Membership",
+    description: "Monthly membership fee",
+    category: "Health",
+    date: "2024-01-12",
+    time: "08:00 AM",
+    amount: 56.5,
+    type: "expense" as const,
+    status: "completed" as const,
+    icon: "🏋️",
+    color: "var(--color-orange)",
+  },
+  {
+    id: 6,
+    name: "Freelance Project",
+    description: "Web design project",
+    category: "Income",
+    date: "2024-01-11",
+    time: "02:30 PM",
+    amount: 1200.0,
+    type: "income" as const,
+    status: "completed" as const,
+    icon: "💻",
+    color: "var(--color-green)",
+  },
+  {
+    id: 7,
+    name: "Electric Bill",
+    description: "Monthly electricity bill",
+    category: "Bills & Utilities",
+    date: "2024-01-10",
+    time: "10:00 AM",
+    amount: 89.45,
+    type: "expense" as const,
+    status: "completed" as const,
+    icon: "⚡",
+    color: "var(--color-yellow)",
+  },
+  {
+    id: 8,
+    name: "Amazon Purchase",
+    description: "Electronics and accessories",
+    category: "Shopping",
+    date: "2024-01-09",
+    time: "04:30 PM",
+    amount: 234.99,
+    type: "expense" as const,
+    status: "pending" as const,
+    icon: "📦",
+    color: "var(--color-orange)",
+  },
+  {
+    id: 9,
+    name: "Coffee Shop",
+    description: "Morning coffee",
+    category: "Food & Dining",
+    date: "2024-01-09",
+    time: "08:30 AM",
+    amount: 12.5,
+    type: "expense" as const,
+    status: "completed" as const,
+    icon: "☕",
+    color: "var(--color-brown)",
+  },
+];
+
+export const TRANSACTION_ACTIONS = [
+  {
+    id: 1,
+    title: "Add Transaction",
+    icon: IconPlus,
+    color: "var(--color-blue)",
+    bgColor: "var(--color-blue-light)",
+  },
+  {
+    id: 2,
+    title: "Export",
+    icon: IconDownload,
+    color: "var(--color-green)",
+    bgColor: "var(--color-green-light)",
+  },
+];
+
+export const STATUS_COLORS = {
+  completed: {
+    bg: "var(--color-green-light)",
+    text: "var(--color-green)",
+    label: "completed",
+  },
+  pending: {
+    bg: "var(--color-orange-light)",
+    text: "var(--color-orange)",
+    label: "pending",
+  },
+  failed: {
+    bg: "var(--color-red-light)",
+    text: "var(--color-red)",
+    label: "failed",
+  },
+};
