@@ -1,12 +1,12 @@
-# 💰 AI Money App - Frontend (UI)
+# AI Money App - Frontend (UI)
 
 Modern and responsive web application for financial management, built with Next.js 15.5.4 and React 19.
 
-## 📋 Overview
+## Overview
 
 The AI Money App frontend is a comprehensive financial management interface that provides users with powerful tools to track expenses, manage budgets, set financial goals, and get AI-powered insights. Built with the latest web technologies, it offers a smooth and intuitive user experience.
 
-## 🏗️ Architecture
+## Architecture
 
 ### Project Structure
 
@@ -85,7 +85,7 @@ Module/
     └── functions/          # Helper functions
 ```
 
-## 🚀 Main Technologies
+## Main Technologies
 
 - **Framework**: Next.js 15.5.4 with Turbopack
 - **UI Library**: React 19.1.0
@@ -99,9 +99,9 @@ Module/
 - **Language**: TypeScript 5
 - **Linting**: ESLint 9
 
-## ✨ Key Features
+## Key Features
 
-### 🔐 Authentication & Authorization
+### Authentication & Authorization
 
 - **Multi-provider authentication** via Clerk:
   - Email/Password
@@ -112,7 +112,7 @@ Module/
 - **Role-based access control** (Admin/User)
 - **Onboarding flow** for new users
 
-### 💳 Account Management
+### Account Management
 
 - **Multiple account types**: Checking, Savings, Investment, Credit Card
 - **Multi-currency support**: USD, EUR, GBP, COP
@@ -121,7 +121,7 @@ Module/
 - **Image upload** for account icons (Cloudinary integration)
 - **Account details modal** with full information
 
-### 💸 Transaction Management
+### Transaction Management
 
 - **Transaction history** with pagination
 - **Advanced filtering**:
@@ -134,7 +134,7 @@ Module/
 - **Transaction state management** (Pending, Completed, Cancelled)
 - **Real-time balance updates**
 
-### 💰 Budget Planning
+### Budget Planning
 
 - **Budget creation** with categories
 - **Budget tracking** and monitoring
@@ -143,7 +143,7 @@ Module/
 - **Budget alerts** and notifications
 - **Monthly/yearly budget views**
 
-### 🎯 Financial Goals
+### Financial Goals
 
 - **Goal creation** with target amounts
 - **Goal categories**: Savings, Investment, Debt Payment, Emergency Fund
@@ -152,7 +152,7 @@ Module/
 - **Goal completion tracking**
 - **Overall progress dashboard**
 
-### 📊 Analytics & Insights
+### Analytics & Insights
 
 - **Spending analytics** by category
 - **Income vs expense charts**
@@ -161,7 +161,7 @@ Module/
 - **Financial health score**
 - **Custom date range analysis**
 
-### 🤖 AI Assistant
+### AI Assistant
 
 - **Natural language processing** for financial queries
 - **Intelligent financial advice**
@@ -169,7 +169,7 @@ Module/
 - **Budget recommendations**
 - **Goal suggestions**
 
-### 📱 Dashboard Features
+### Dashboard Features
 
 - **Responsive design** for all devices
 - **Dark mode support**
@@ -179,7 +179,7 @@ Module/
 - **User profile management**
 - **Settings customization**
 
-### 👥 User Management (Admin)
+### User Management (Admin)
 
 - **User list** with pagination
 - **User creation and editing**
@@ -187,7 +187,7 @@ Module/
 - **User activity monitoring**
 - **User deletion**
 
-## 🎨 UI Components
+## UI Components
 
 ### Reusable Components
 
@@ -212,7 +212,7 @@ The application includes a comprehensive library of reusable UI components:
 - **Borders**: Consistent border radius and colors
 - **Animations**: Smooth transitions and micro-interactions
 
-## 🔌 API Integration
+## API Integration
 
 ### HTTP Client
 
@@ -254,7 +254,7 @@ class AccountService {
 - **onboardingService**: Onboarding flow
 - **cloudinaryService**: Image uploads
 
-## 🔐 Authentication Flow
+## Authentication Flow
 
 ### Login Process
 
@@ -280,7 +280,7 @@ class AccountService {
 - **Refresh**: Automatic token refresh on expiration
 - **Logout**: Token removal and redirect to login
 
-## 🚀 Installation and Setup
+## Installation and Setup
 
 ### Prerequisites
 
@@ -339,7 +339,7 @@ npm start
 
 The application will be available at `http://localhost:3000`
 
-## 📦 Available Scripts
+## Available Scripts
 
 ```json
 {
@@ -350,7 +350,7 @@ The application will be available at `http://localhost:3000`
 }
 ```
 
-## 🎯 Routing Structure
+## Routing Structure
 
 ### Public Routes
 
@@ -377,7 +377,7 @@ The application will be available at `http://localhost:3000`
 
 - `/onboarding` - User onboarding flow (first-time users)
 
-## 🎨 Styling & Theming
+## Styling & Theming
 
 ### TailwindCSS Configuration
 
@@ -410,7 +410,7 @@ The application uses TailwindCSS 4 with custom configuration:
 - **Flexible layouts** with CSS Grid and Flexbox
 - **Responsive typography** with fluid font sizes
 
-## 🔄 State Management
+## State Management
 
 ### Local State
 
@@ -430,7 +430,7 @@ The application uses TailwindCSS 4 with custom configuration:
 - **localStorage** for persistent data
 - **Cookies** for token storage
 
-## 📊 Data Visualization
+## Data Visualization
 
 ### Recharts Integration
 
@@ -450,7 +450,7 @@ The application uses Recharts for all data visualization:
 - **Animations** for smooth transitions
 - **Export to image** functionality
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run tests (when configured)
@@ -463,7 +463,7 @@ npm run test:coverage
 npm run test:watch
 ```
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### Next.js Features
 
@@ -488,7 +488,7 @@ npm run test:watch
 - **Pagination** for large data sets
 - **Virtual scrolling** for long lists (when needed)
 
-## 🔒 Security
+## Security
 
 ### Security Measures
 
@@ -507,7 +507,7 @@ npm run test:watch
 - **Error messages** without sensitive information
 - **Secure password handling** (never stored on frontend)
 
-## 🐛 Debugging
+## Debugging
 
 ### Development Tools
 
@@ -523,7 +523,7 @@ npm run test:watch
 - **Toast notifications** for user feedback
 - **Sentry integration** (optional) for error tracking
 
-## 🚧 Roadmap
+## Roadmap
 
 ### Upcoming Features
 
@@ -538,7 +538,7 @@ npm run test:watch
 - [ ] Multi-language support (i18n)
 - [ ] Accessibility improvements (WCAG 2.1 AA)
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the project
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
@@ -582,33 +582,37 @@ export default function Component({ title, onAction }: ComponentProps) {
 }
 ```
 
-## 📝 License
+## License
 
 This project is private and under active development.
 
-## 👨‍💻 Author
+## Author
 
 **Team ai money**
+-Isabel Henao(QA)
+-Keyny M (Backend structure)
+-Alejandro Barrios (Backend - Database)
+-Jose Simón Barreto Cardona (Tech Lead - Frontend)
 
 - Email: josesimonbarreto.design@gmail.com
 - GitHub: [@joseCardona12](https://github.com/joseCardona12)
 
-## 📞 Support
+## Support
 
 For technical support and questions about the frontend:
 
 - Create an issue on GitHub
 - Contact the development team
 
-## 🔗 Related Links
+## Related Links
 
-- [📖 Backend Documentation](../backend/README.md)
-- [📖 General Project Documentation](../README.md)
-- [📊 Database Model Documentation](./DATABASE_MODEL.md)
+- [Backend Documentation](../backend/README.md)
+- [General Project Documentation](../README.md)
+- [Database Model Documentation](./DATABASE_MODEL.md)
 
 ---
 
 **Last updated**: 2025-10-30
 **Version**: 0.1.0
-**Status**: Under active development 🚧
+**Status**: Under active development
 **Default port**: 3000

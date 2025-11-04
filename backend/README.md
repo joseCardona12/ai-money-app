@@ -1,12 +1,12 @@
-# 💰 AI Money App - Backend API
+# AI Money App - Backend API
 
 Robust and scalable RESTful API for the AI Money App financial management application, built with Node.js, Express, and TypeScript.
 
-## 📋 Overview
+## Overview
 
 The AI Money App backend provides a complete API to manage all user financial operations, including authentication, transactions, budgets, financial goals, analytics, and more. It uses a modular layer-based architecture (Controller-Service-Repository) to keep the code organized and scalable.
 
-## 🏗️ Architecture
+## Architecture
 
 ### Project Structure
 
@@ -73,7 +73,7 @@ Module/
 └── types.ts         # TypeScript types and interfaces
 ```
 
-## 🚀 Main Technologies
+## Main Technologies
 
 - **Runtime**: Node.js
 - **Framework**: Express 5.1.0
@@ -87,9 +87,9 @@ Module/
 - **Environment Variables**: dotenv 17.2.3
 - **Dev Tools**: nodemon 3.1.10, ts-node 10.9.2
 
-## 📡 API Endpoints
+## API Endpoints
 
-### 🔐 Authentication (`/api/auth`)
+### Authentication (`/api/auth`)
 
 | Method | Endpoint                | Description            | Auth |
 | ------ | ----------------------- | ---------------------- | ---- |
@@ -98,7 +98,7 @@ Module/
 | POST   | `/auth/forgot-password` | Request password reset | No   |
 | POST   | `/auth/reset-password`  | Reset password         | No   |
 
-### 👥 Users (`/api/users`)
+### Users (`/api/users`)
 
 | Method | Endpoint     | Description               | Auth |
 | ------ | ------------ | ------------------------- | ---- |
@@ -108,7 +108,7 @@ Module/
 | PUT    | `/users/:id` | Update user               | Yes  |
 | DELETE | `/users/:id` | Delete user               | Yes  |
 
-### 💳 Accounts (`/api/accounts`)
+### Accounts (`/api/accounts`)
 
 | Method | Endpoint        | Description        | Auth |
 | ------ | --------------- | ------------------ | ---- |
@@ -118,7 +118,7 @@ Module/
 | PUT    | `/accounts/:id` | Update account     | Yes  |
 | DELETE | `/accounts/:id` | Delete account     | Yes  |
 
-### 💸 Transactions (`/api/transactions`)
+### Transactions (`/api/transactions`)
 
 | Method | Endpoint            | Description            | Auth |
 | ------ | ------------------- | ---------------------- | ---- |
@@ -128,7 +128,7 @@ Module/
 | PUT    | `/transactions/:id` | Update transaction     | Yes  |
 | DELETE | `/transactions/:id` | Delete transaction     | Yes  |
 
-### 🎯 Goals (`/api/goals`)
+### Goals (`/api/goals`)
 
 | Method | Endpoint     | Description     | Auth |
 | ------ | ------------ | --------------- | ---- |
@@ -138,7 +138,7 @@ Module/
 | PUT    | `/goals/:id` | Update goal     | Yes  |
 | DELETE | `/goals/:id` | Delete goal     | Yes  |
 
-### 💰 Budgets (`/api/budgets`)
+### Budgets (`/api/budgets`)
 
 | Method | Endpoint       | Description       | Auth |
 | ------ | -------------- | ----------------- | ---- |
@@ -148,7 +148,7 @@ Module/
 | PUT    | `/budgets/:id` | Update budget     | Yes  |
 | DELETE | `/budgets/:id` | Delete budget     | Yes  |
 
-### 📊 Analytics (`/api/analytics`)
+### Analytics (`/api/analytics`)
 
 | Method | Endpoint         | Description             | Auth |
 | ------ | ---------------- | ----------------------- | ---- |
@@ -158,7 +158,7 @@ Module/
 | PUT    | `/analytics/:id` | Update analytics        | Yes  |
 | DELETE | `/analytics/:id` | Delete analytics        | Yes  |
 
-### 📂 Categories (`/api/categories`)
+### Categories (`/api/categories`)
 
 | Method | Endpoint          | Description         | Auth |
 | ------ | ----------------- | ------------------- | ---- |
@@ -168,7 +168,7 @@ Module/
 | PUT    | `/categories/:id` | Update category     | Yes  |
 | DELETE | `/categories/:id` | Delete category     | Yes  |
 
-### ⚙️ Settings (`/api/settings`)
+### Settings (`/api/settings`)
 
 | Method | Endpoint        | Description        | Auth |
 | ------ | --------------- | ------------------ | ---- |
@@ -178,7 +178,7 @@ Module/
 | PUT    | `/settings/:id` | Update settings    | Yes  |
 | DELETE | `/settings/:id` | Delete settings    | Yes  |
 
-### 🎓 Onboarding (`/api/onboardings`)
+### Onboarding (`/api/onboardings`)
 
 | Method | Endpoint           | Description          | Auth |
 | ------ | ------------------ | -------------------- | ---- |
@@ -188,7 +188,7 @@ Module/
 | PUT    | `/onboardings/:id` | Update onboarding    | Yes  |
 | DELETE | `/onboardings/:id` | Delete onboarding    | Yes  |
 
-### 💱 Reference Endpoints
+### Reference Endpoints
 
 - **Currencies**: `/api/currencies`
 - **Account Types**: `/api/account-types`
@@ -196,7 +196,7 @@ Module/
 - **Goal Types**: `/api/goal-types`
 - **States**: `/api/states`
 
-## 🗄️ Database Models
+## Database Models
 
 ### Main Models
 
@@ -228,7 +228,7 @@ Module/
 12. **BudgetPreferenceModel** - Budget preferences
 13. **AiAssistantModel** - AI Assistant
 
-## 🔐 Authentication and Security
+## Authentication and Security
 
 ### Authentication System
 
@@ -262,7 +262,7 @@ The backend uses **JWT (JSON Web Tokens)** for authentication:
 3. Email is sent with reset link
 4. User resets password with token (`/auth/reset-password`)
 
-## 📧 Email Service
+## Email Service
 
 ### EmailService
 
@@ -279,7 +279,7 @@ EMAIL_USER=your-email@gmail.com
 EMAIL_PASSWORD=your-app-password
 ```
 
-## 🛡️ Error Handling
+## Error Handling
 
 ### Error Handler Middleware
 
@@ -306,7 +306,7 @@ Centralized middleware for error handling:
 }
 ```
 
-## 🚀 Installation and Setup
+## Installation and Setup
 
 ### Prerequisites
 
@@ -378,7 +378,7 @@ npm run build
 npm start
 ```
 
-## 📦 Available Scripts
+## Available Scripts
 
 ```json
 {
@@ -388,7 +388,7 @@ npm start
 }
 ```
 
-## 🔧 Sequelize Configuration
+## Sequelize Configuration
 
 ### Database Connection
 
@@ -409,7 +409,7 @@ npm start
 - Express server initialization
 ```
 
-## 🌐 CORS Configuration
+## CORS Configuration
 
 ```typescript
 // index.ts
@@ -421,7 +421,7 @@ cors({
 });
 ```
 
-## 📊 Validations
+## Validations
 
 ### Custom Validators
 
@@ -436,7 +436,7 @@ cors({
 2. **Service**: Business logic validation
 3. **Repository**: Data integrity validation
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run tests (when configured)
@@ -446,7 +446,7 @@ npm test
 npm run test:coverage
 ```
 
-## 📈 Best Practices Implemented
+## Best Practices Implemented
 
 ### Architecture
 
@@ -472,7 +472,7 @@ npm run test:coverage
 - ✅ Error logging
 - ✅ Clean and documented code
 
-## 🔄 Request Flow
+## Request Flow
 
 ```
 1. Client → HTTP Request
@@ -489,7 +489,7 @@ npm run test:coverage
 12. Express → Sends response to client
 ```
 
-## 🐛 Debugging
+## Debugging
 
 ### Logs
 
@@ -509,7 +509,7 @@ The server logs:
 - **VS Code**: Debugging with breakpoints
 - **Nodemon**: Hot reload in development
 
-## 🚧 Roadmap
+## Roadmap
 
 ### Upcoming Features
 
@@ -524,7 +524,7 @@ The server logs:
 - [ ] Webhooks for notifications
 - [ ] GraphQL API (optional)
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the project
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
@@ -540,32 +540,36 @@ The server logs:
 - Handle errors appropriately
 - Write tests for new features
 
-## 📝 License
+## License
 
 This project is private and under active development.
 
-## 👨‍💻 Author
+## Author
 
 **Team ai money**
+-Isabel Henao(QA)
+-Keyny M (Backend structure)
+-Alejandro Barrios (Backend - Database)
+-Jose Simón Barreto Cardona (Tech Lead - Frontend)
 
 - Email: josesimonbarreto.design@gmail.com
 - GitHub: [@joseCardona12](https://github.com/joseCardona12)
 
-## 📞 Support
+## Support
 
 For technical support and questions about the backend:
 
 - Create an issue on GitHub
 - Contact the development team
 
-## 🔗 Related Links
+## Related Links
 
-- [📖 Frontend Documentation](../ui/README.md)
-- [📖 General Project Documentation](../README.md)
+- [Frontend Documentation](../ui/README.md)
+- [General Project Documentation](../README.md)
 
 ---
 
 **Last updated**: 2025-10-30
 **Version**: 1.0.0
-**Status**: Under active development 🚧
+**Status**: Under active development
 **Default port**: 3001
