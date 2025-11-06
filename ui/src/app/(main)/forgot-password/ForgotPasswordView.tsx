@@ -2,11 +2,11 @@
 import Logo from "@/ui/components/Logo";
 import FormForgotPassword from "./components/FormForgotPassword";
 import FormForgotPasswordRight from "./components/FormForgotPasswordRight";
-import PublicRoute from "@/components/auth/PublicRoute";
+import PublicRoute from "@/components/PublicRoute";
 
 export default function ForgotPasswordView(): React.ReactNode {
   return (
-    <PublicRoute allowAuthenticated={false}>
+    <PublicRoute>
       <div>
         <main className="w-full bg-red-300 h-[100vh] flex">
           <section className="w-[50%] bg-[var(--color-gray)] h-[100vh] flex justify-center">
