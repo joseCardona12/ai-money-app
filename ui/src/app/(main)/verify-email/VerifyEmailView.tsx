@@ -3,11 +3,11 @@
 import Logo from "@/ui/components/Logo";
 import FormVerifyEmail from "./components/FormVerifyEmail";
 import FormVerifyEmailRight from "./components/FormVerifyEmailRight";
-import PublicRoute from "@/components/auth/PublicRoute";
+import PublicRoute from "@/components/PublicRoute";
 
 export default function VerifyEmailView(): React.ReactNode {
   return (
-    <PublicRoute allowAuthenticated={false}>
+    <PublicRoute>
       <div>
         <main className="w-full h-[100vh] flex">
           <section className="w-[50%] bg-[var(--color-gray)] h-[100vh] flex justify-center">
